@@ -11,21 +11,23 @@
     <div class="container">
         <div class="consola">
             <div class="screen1"></div>
-            <div class="screen2"><div id="puntero"></div></div>
-            
+            <div class="screen2"><div class="puntero" id="puntero"></div></div>
+            <div class="pantalla-juego" ><img src="https://art.pixilart.com/sr24381ed1d6bb6.gif" id="pantalla-juego" alt=""></div>
+            <div class="texto-pantalla" id="texto">PRESIONA B PARA INCIAR</div>
             <div class="logo-consola"><img src="img/logo-gameboy.png" alt="logo-consola"></div>
             <div class="cruz-horizontal"></div>
             <div class="cruz-vertical"></div>
-            <button class="flecha-arriba" type="button"></button>
-            <button class="flecha-abajo" type="button"></button>
+            <button class="flecha-arriba" type="button" onclick="moverArriba()"></button>
+            <button class="flecha-abajo" type="button" onclick="moverAbajo()"></button>
             <button class="flecha-derecha" type="button"></button>
             <button class="flecha-izquierda" type="button"></button>
             
             <div class="fondo-boton"></div>
             <!-- <div class="boton-uno"><div class="letra-boton-a">A</div></div>
             <div class="boton-dos"><div class="letra-boton-b">B</div></div> -->
-            <button class="boton-uno" type="button"><div class="letra-boton-a">A</div></button> 
-            <button class="boton-dos" type="button"><div class="letra-boton-a">B</div></button> 
+            <button class="boton-uno" id="boton-uno" type="button"><div class="letra-boton-a">A</div></button> 
+            <button class="boton-dos" id="boton-dos" type="button"  ><div class="letra-boton-a">B</div></button> 
+            
         </div>
     </div>
     <script src="js/programa.js"></script>
