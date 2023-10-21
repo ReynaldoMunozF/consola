@@ -1,0 +1,164 @@
+.consola {
+    position: relative;
+    background-color: dimgrey;
+    width: 40em;
+    height: 60em;
+    border-radius: 0px 0px 100px 0px;
+    /* left: 70em; */
+    
+}
+.screen1{
+    position: absolute;
+    background-color: rgb(178, 180, 177);
+    width: 30em;
+    height: 20em;
+    top: 3em;
+    left: 5em;
+    border-radius: 15px;
+    box-shadow:-2px -2px  2px 2px;
+
+}
+.screen2{
+    position: absolute;
+    background-color: rgb(88, 226, 2);
+    width: 22em;
+    height: 15em;
+    top: 5.5em;
+    left: 10em;
+    border-radius: 15px;
+    
+} 
+.logo-consola {
+    position: absolute;
+    top: 18em;
+    left: 12em;
+    
+
+}
+
+#puntero {
+    position: absolute;
+    background-color: blue;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+.logo-consola img {
+    
+    width: 15em;
+}
+
+.cruz-horizontal {
+    position: absolute;
+    width: 3em;
+    height: 9em;
+    background-color: black;
+    top: 28em;
+    left: 8em;
+    border-radius: 6px;
+}
+.cruz-vertical {
+    position: absolute;
+    width: 9em;
+    height: 3em;
+    background-color: black;
+    top: 31em;
+    left: 5em;
+    border-radius: 6px;
+}
+.flecha-arriba{
+    position: absolute;
+    background-color: rgb(74, 75, 75);
+    top: 34em;
+    left: 9.95em;
+    width: 3em;
+    height: 3em;
+    }
+.flecha-abajo{
+    position: absolute;
+    background-color: rgb(74, 75, 75);
+    top: 41em;
+    left: 9.95em;
+    width: 3em;
+    height: 3em;
+    }
+.flecha-izquierda{
+    position: absolute;
+    background-color: rgb(74, 75, 75);
+    top: 37.5em;
+    left: 13.5em;
+    width: 3em;
+    height: 3em;
+    }
+.flecha-derecha{
+    position: absolute;
+    background-color: rgb(74, 75, 75);
+    top: 37.5em;
+    left: 6.4em;
+    width: 3em;
+    height: 3em;
+    }
+
+
+.fondo-boton {
+    position: absolute;
+    background-color: rgb(49, 49, 49);
+    width: 5em;
+    height: 14em;
+    border-radius: 30px;
+    top: 26em;
+    left: 27em;
+    transform:rotate(45deg);
+    
+
+}
+
+.boton-uno {
+    position: absolute;
+    background-color: red;
+    width: 4em;
+    height:4em;
+    border-radius: 50%;
+    top: 39.8em;
+    left: 31em;  
+    box-shadow: 2px 2px 2px black;  
+}
+.boton-uno:active{
+    width: 3.6em;
+    height: 3.6em;
+}
+.letra-boton-a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 2em;
+    
+}
+
+.boton-dos {
+    position: absolute;
+    background-color: red;
+    width: 4em;
+    height:4em;
+    border-radius: 50%;
+    top: 35em;
+    left: 36em;
+    box-shadow: 2px 2px 2px black;  
+}
+.boton-dos:active{
+    width: 3.6em;
+    height: 3.6em;
+}
+   
+.letra-boton-b{
+    color: rgb(9, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 2em;
+    text-shadow: -1.5px -1.5px 1px black;
+}
