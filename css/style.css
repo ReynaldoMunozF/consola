@@ -5,9 +5,50 @@
     height: 60em;
     border-radius: 0px 0px 100px 0px;
     /* left: 70em; */
-    
+
 }
-.screen1{
+
+.boton-encendido {
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    width: 4em;
+    height: 4em;
+    top: 65em;
+    left: 3em;
+}
+
+.letra-boton-on {
+    color: rgb(249, 5, 5);
+    font-size: 1.5em;
+}
+
+.boton-encendido:active {
+    width: 3.8em;
+    height: 3.8em;
+}
+
+.boton-apagado {
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    width: 4em;
+    height: 4em;
+    top: 65em;
+    left: 8em;
+}
+
+.letra-boton-off {
+    color: rgb(254, 254, 254);
+    font-size: 1.5em;
+}
+
+.boton-apagado:active {
+    width: 3.8em;
+    height: 3.8em;
+}
+
+.screen1 {
     position: absolute;
     background-color: rgb(178, 180, 177);
     width: 30em;
@@ -15,10 +56,11 @@
     top: 3em;
     left: 5em;
     border-radius: 15px;
-    box-shadow:-2px -2px  2px 2px;
+    box-shadow: -2px -2px 2px 2px;
 
 }
-.screen2{
+
+.screen2 {
     position: absolute;
     background-color: rgb(88, 226, 2);
     width: 22em;
@@ -26,21 +68,24 @@
     top: 5.5em;
     left: 10em;
     border-radius: 15px;
-    
-} 
-.pantalla-juego{
+
+}
+
+.pantalla-juego {
     position: absolute;
     top: 5.5em;
     left: 10em;
 
-    opacity: 75%;
+
 
 }
-.pantalla-juego img{
+
+.pantalla-juego img {
     width: 22em;
     height: 15em;
 }
-.texto-pantalla{
+
+.texto-pantalla {
     position: absolute;
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -53,11 +98,16 @@
     -webkit-text-stroke-color: black;
 }
 
+.senal {
+
+    display: none;
+}
+
 .logo-consola {
     position: absolute;
     top: 18em;
     left: 12em;
-    
+
 
 }
 
@@ -71,8 +121,9 @@
     margin-top: 50px;
     margin-left: 80px;
 }
+
 .logo-consola img {
-    
+
     width: 15em;
 }
 
@@ -85,6 +136,7 @@
     left: 8em;
     border-radius: 6px;
 }
+
 .cruz-vertical {
     position: absolute;
     width: 9em;
@@ -94,38 +146,42 @@
     left: 5em;
     border-radius: 6px;
 }
-.flecha-arriba{
+
+.flecha-arriba {
     position: absolute;
     background-color: rgb(74, 75, 75);
     top: 34em;
     left: 9.95em;
     width: 3em;
     height: 3em;
-    }
-.flecha-abajo{
+}
+
+.flecha-abajo {
     position: absolute;
     background-color: rgb(74, 75, 75);
     top: 41em;
     left: 9.95em;
     width: 3em;
     height: 3em;
-    }
-.flecha-izquierda{
+}
+
+.flecha-izquierda {
     position: absolute;
     background-color: rgb(74, 75, 75);
     top: 37.5em;
     left: 13.5em;
     width: 3em;
     height: 3em;
-    }
-.flecha-derecha{
+}
+
+.flecha-derecha {
     position: absolute;
     background-color: rgb(74, 75, 75);
     top: 37.5em;
     left: 6.4em;
     width: 3em;
     height: 3em;
-    }
+}
 
 
 .fondo-boton {
@@ -136,8 +192,8 @@
     border-radius: 30px;
     top: 26em;
     left: 27em;
-    transform:rotate(45deg);
-    
+    transform: rotate(45deg);
+
 
 }
 
@@ -145,42 +201,45 @@
     position: absolute;
     background-color: red;
     width: 4em;
-    height:4em;
+    height: 4em;
     border-radius: 50%;
     top: 39.8em;
-    left: 31em;  
-    box-shadow: 2px 2px 2px black;  
+    left: 31em;
+    box-shadow: 2px 2px 2px black;
 }
-.boton-uno:active{
+
+.boton-uno:active {
     width: 3.6em;
     height: 3.6em;
 }
-.letra-boton-a{
+
+.letra-boton-a {
     color: rgb(0, 0, 0);
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding-top: 0.1em;
     font-size: 2em;
-    
+
 }
 
 .boton-dos {
     position: absolute;
     background-color: red;
     width: 4em;
-    height:4em;
+    height: 4em;
     border-radius: 50%;
     top: 35em;
     left: 36em;
-    box-shadow: 2px 2px 2px black;  
+    box-shadow: 2px 2px 2px black;
 }
-.boton-dos:active{
+
+.boton-dos:active {
     width: 3.6em;
     height: 3.6em;
 }
-   
-.letra-boton-b{
+
+.letra-boton-b {
     color: rgb(9, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
