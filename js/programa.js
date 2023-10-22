@@ -18,6 +18,10 @@ let senal = document.getElementById("senal");
 let audio = document.getElementById("musica");
 let btnEncendido = document.getElementById("boton-encendido");
 let btnApagado = document.getElementById("boton-apagado");
+let btnSubirVolumen = document.getElementById("boton-subir-volumen");
+let btnBajarVolumen = document.getElementById("boton-bajar-volumen");
+let Led = document.getElementById("led");
+
 
 // document.addEventListener("keydown", function (e) {
 //  console.log(e.keycode)
@@ -35,17 +39,26 @@ let btnApagado = document.getElementById("boton-apagado");
 //      puntero.style.marginTop = movtop + "px";
 //  };
 
-btnEncendido.onclick = function () {
+btnEncendido.onclick = function () {  //enciende la consola
     audio.play();
     pantallaJuego.src = "../img/img1.png";
     texto.textContent = "";
+    Led.style.backgroundColor = "red";
 
 }
 
-btnApagado.onclick = function () {
+btnApagado.onclick = function () { //apaga la consola
     audio.load();
     pantallaJuego.src = "../img/img0.png";
     texto.textContent = "OFF";
+    Led.style.backgroundColor = "black";
+}
+btnSubirVolumen.onclick = function () { // sube el volumen
+    audio.volume += .2;
+}
+btnBajarVolumen.onclick = function () { // baja el volumen
+    audio.volume -= .2;
+  
 }
 
 

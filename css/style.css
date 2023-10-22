@@ -1,10 +1,11 @@
 .consola {
     position: relative;
-    background-color: dimgrey;
+    background-color: rgb(124, 124, 124);
     width: 40em;
     height: 60em;
     border-radius: 0px 0px 100px 0px;
-    /* left: 70em; */
+    box-shadow: 4px 4px 10px 6px;
+   left: 70em; 
 
 }
 
@@ -23,6 +24,13 @@
     font-size: 1.5em;
 }
 
+.titulo-encendido {
+    position: absolute;
+    top: 66em;
+    left: 4.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
 .boton-encendido:active {
     width: 3.8em;
     height: 3.8em;
@@ -47,7 +55,58 @@
     width: 3.8em;
     height: 3.8em;
 }
+.titulo-volumen {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 11.4em;
+    left: 43.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+.boton-subir-volumen {
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    width: 2.5em;
+    height: 2.5em;
+    top: 8em;
+    left: 45em;
+}
+.boton-bajar-volumen {
+    position: absolute;
+    border-radius: 10px;
+    background-color: black;
+    width: 2.5em;
+    height: 2.5em;
+    top: 12em;
+    left: 45em;
+}
+.letra-boton-volumen {
+    color: rgb(254, 254, 254);
+    font-size: 1.5em;
+}
 
+.boton-subir-volumen:active {
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.led{
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    top: 12em;
+    left: 7em;
+}
+.titulo-led{
+    position: absolute;
+    top: 20.5em;
+    left: 9em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.65em;
+}
 .screen1 {
     position: absolute;
     background-color: rgb(178, 180, 177);
