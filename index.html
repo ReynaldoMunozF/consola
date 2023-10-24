@@ -12,37 +12,45 @@
 <body>
     <div class="container">
         <div class="consola">
-            <audio id="musica" src="img/01. Defend the Vulture.mp3"></audio>
+            <audio id="musica" src="img/gameboy.mp3"></audio>
+            <audio id="tono-boton1" src="img/boton_1.mp3"></audio>
+            <audio id="musica-juego" src="img/01. Defend the Vulture.mp3"></audio>
+
+
             <div class="screen1"></div>
             <div class="screen2">
-                <div class="puntero" id="puntero"></div>
             </div>
             <div class="pantalla-juego">
-                <img src="img/img0.png" id="pantalla-juego" alt="">
+                <img src="img/nintendo.jpg" id="pantalla-juego" style="display:none" alt="">
+                <div class="texto" id="texto">PRESS START</div>
             </div>
             <div class="led" id="led"></div>
-            <div class="titulo-led">BATERRY</div>
-            <div class="texto-pantalla" id="texto"></div>
-            <div class="senal" id="senal" style="display: none;"></div>
+            <div class="titulo-led">BATTERY</div>
             <div class="logo-consola">
                 <img src="img/logo-gameboy.png" alt="logo-consola">
             </div>
             <div class="cruz-horizontal"></div>
             <div class="cruz-vertical"></div>
-            <button class="flecha-arriba" type="button" onclick="moverArriba()"></button>
-            <button class="flecha-abajo" type="button" onclick="moverAbajo()"></button>
+            <button class="flecha-arriba" type="button" onclick=""></button>
+            <button class="flecha-abajo" type="button" onclick=""></button>
             <button class="flecha-derecha" type="button"></button>
             <button class="flecha-izquierda" type="button"></button>
 
             <div class="fondo-boton"></div>
-            <!-- <div class="boton-uno"><div class="letra-boton-a">A</div></div>
-            <div class="boton-dos"><div class="letra-boton-b">B</div></div> -->
+           
             <button class="boton-uno" id="boton-uno" type="button">
                 <div class="letra-boton-a">A</div>
             </button>
             <button class="boton-dos" id="boton-dos" type="button">
                 <div class="letra-boton-a">B</div>
             </button>
+            <button class="boton-start" id="boton-start" type="button">
+                <div class="letra-boton-start">START</div>
+            </button>
+            <button class="boton-select" id="boton-select" type="button">
+                <div class="letra-boton-select">SELECT</div>
+            </button>
+
             <div class="titulo-encendido">ENCENDIDO</div>
             <button class="boton-encendido" id="boton-encendido" type="button">
                 <div class="letra-boton-on">ON</div>
