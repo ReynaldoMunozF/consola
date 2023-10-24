@@ -1,4 +1,7 @@
+
+
 .consola {
+    
     position: absolute;
     justify-content: center;
     background-color: rgb(241, 122, 3);
@@ -6,9 +9,11 @@
     height: 60em;
     border-radius: 0px 0px 100px 0px;
     box-shadow: 4px 4px 10px 6px;
-
+    left: 60em;
+    top: 10em;
 
 }
+
 
 .boton-encendido {
     position: absolute;
@@ -329,4 +334,21 @@
     position: relative;
     top: 2em;
     font-weight: bold;
+}
+.orificios-audio img {
+    position: absolute;
+    width: 25em;
+    top: 44em;
+    left: 19em;
+}
+.texto2 {
+    position: absolute;
+    color: rgb(38, 105, 14);
+    top: 11em;
+    left: 24em;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 0.5px 3px ;
+
 }

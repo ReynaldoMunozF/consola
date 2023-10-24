@@ -16,6 +16,9 @@ let btnSubirVolumen = document.getElementById("boton-subir-volumen");
 let btnBajarVolumen = document.getElementById("boton-bajar-volumen");
 let btnStart = document.getElementById("boton-start");
 let Led = document.getElementById("led");
+let texto2 = document.getElementById("texto2");
+let adelantar = 0;
+let retroceder = 0;
 
 
 // document.addEventListener("keydown", function (e) {
@@ -66,28 +69,35 @@ btnStart.onclick = function () {  //arranca el juego
     audio2.play();
     pantallaJuego.src = "../img/img1.png";
     texto.textContent =""
+    texto2.style.display ="block"
     Led.style.backgroundColor = "red";
 
 }
 
 btnA.onclick = function () {
     sonidoBtn1.play();
-    pantallaJuego.src = "../img/img2.png";
-    texto.textContent = "1 PLAYER (A) 2 PLAYER (B)";
+    texto2.style.display ="none"
+    if( adelantar == 0){
+        pantallaJuego.src = "../img/img3.png";
+        //texto.textContent = "1 PLAYER (A) 2 PLAYER (B)";
+        adelantar=1;
+        retroceder=1;
+    }else if(adelantar == 1){
+        pantallaJuego.src = "../img/img2.png";
+        adelantar=2
+        retroceder =2
+    }else{
+        pantallaJuego.src = "../img/img6.png";
+        adelantar =1 ;
+        
+    }
+    
 };
 btnB.onclick = function () {
     sonidoBtn1.play();
-    console.log(senal)
-    console.log(window.getComputedStyle(senal).getPropertyValue("display"))
-    if (senal.style.display == "none") {
-
-        pantallaJuego.src = "../img/video1.mp4";
-        texto.textContent = "1 PLAYER (A) 2 PLAYER (B)";
-        senal.style.display = "block";
-
-    } else {
-        pantallaJuego.src = "../img/logo-gameboy.png";
-    }
+    pantallaJuego.src = "../img/img3.png";
+    
+   
 }
 
 
