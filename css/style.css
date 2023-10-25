@@ -1,7 +1,7 @@
+
+
 .container {
     display:flow-root;
-    margin: 0 auto;
-    
 }
 
 .consola {
@@ -9,7 +9,7 @@
     
     position: absolute;
     justify-content: center;
-    background-color: rgb(241, 122, 3);
+    background-color: rgb(154, 151, 151);
     width: 35em;
     height: 50em;
     border-radius: 0px 0px 100px 0px;
@@ -20,7 +20,7 @@
 
 @media (max-width:500px){
     .consola{
-    margin-left: 1em;
+    margin-left: 2em;
     margin-top: 3em;
     }
 }
@@ -32,7 +32,7 @@
     background-color: black;
     height: 2em;
     top: 56em;
-    left: -18em;
+    left: -14em;
 }
 
 .letra-boton-on {
@@ -43,15 +43,13 @@
 .titulo-encendido {
     position: relative;
     top: 56.5em;
-    left: -11.5em;
+    left: -7.5em;
+    height: 3em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
 }
 
-.boton-encendido:active {
-    width: 3.8em;
-    height: 3.8em;
-}
+
 
 .boton-apagado {
     position: relative;
@@ -59,7 +57,7 @@
     background-color: black;
     height: 2em;
     top: 56em;
-    left: -17.5em;
+    left: -13.5em;
 }
 
 .letra-boton-off {
@@ -67,10 +65,7 @@
     font-size: 1.5em;
 }
 
-.boton-apagado:active {
-    width: 3.8em;
-    height: 3.8em;
-}
+
 
 .titulo-volumen {
     position: absolute;
@@ -358,6 +353,7 @@
 
 .texto2 {
     position: absolute;
+    display: none;
     color: rgb(38, 105, 14);
     top: 11em;
     left: 22em;
@@ -366,4 +362,47 @@
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 0.5px 3px;
 
+}
+.titulo-cambio-color{
+    position: absolute;
+    top: 56em;
+    left: 0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.color-uno{
+    position: relative;
+    background-color: blue;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -20em;
+}
+.color-dos{
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -18em;
+}
+.color-tres{
+    position: relative;
+    background-color: rgb(38, 150, 4);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -16em;
+}
+.color-cuatro{
+    position: relative;
+    background-color: rgb(253, 0, 241);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -14em;
 }

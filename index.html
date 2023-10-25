@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Proyecto Consola</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="consola">
+
+        <div class="consola" id="consola">
             <audio id="musica" src="img/gameboy.mp3"></audio>
             <audio id="tono-boton1" src="img/boton_1.mp3"></audio>
             <audio id="musica-juego" loop src="img/01. Defend the Vulture.mp3"></audio>
-
-
             <div class="screen1"></div>
             <div class="screen2">
             </div>
@@ -24,7 +23,7 @@
                 <img src="img/nintendo.jpg" id="pantalla-juego" style="display:none" alt="">
                 <div class="texto" id="texto">PRESS START</div>
             </div>
-            <div class="texto2" id="texto2" style="display: none;">PRESS <br> A <br> TO CONTINUE</div>
+            <div class="texto2" id="texto2">PRESS <br> A <br> TO CONTINUE</div>
             <div class="led" id="led"></div>
             <div class="titulo-led">BATTERY</div>
             <div class="logo-consola">
@@ -37,9 +36,7 @@
             <button class="flecha-derecha" type="button"></button>
             <button class="flecha-izquierda" type="button"></button>
             <div class="orificios-audio"><img src="img/audio-gameboy.png" alt=""></div>
-
             <div class="fondo-boton"></div>
-
             <button class="boton-uno" id="boton-uno" type="button">
                 <div class="letra-boton-a">A</div>
             </button>
@@ -52,7 +49,6 @@
             <button class="boton-select" id="boton-select" type="button">
                 <div class="letra-boton-select">SELECT</div>
             </button>
-
             <div class="titulo-encendido">ENCENDIDO</div>
             <button class="boton-encendido" id="boton-encendido" type="button">
                 <div class="letra-boton-on">ON</div>
@@ -67,7 +63,19 @@
             <button class="boton-bajar-volumen" id="boton-bajar-volumen" type="button">
                 <div class="letra-boton-volumen">-</div>
             </button>
-
+            <div class="titulo-cambio-color">SELECCIONA EL COLOR DE TU CONSOLA</div>
+            <div class="cambio-de-color">
+                <button class="color-uno" id="color-uno" type="button"></button>
+            </div>
+            <div class="cambio-de-color">
+                <button class="color-dos" id="color-dos" type="button"></button>
+            </div>
+            <div class="cambio-de-color">
+                <button class="color-tres" id="color-tres" type="button"></button>
+            </div>
+            <div class="cambio-de-color">
+                <button class="color-cuatro" id="color-cuatro" type="button"></button>
+            </div>
         </div>
     </div>
     <script src="js/programa.js"></script>
