@@ -1,28 +1,38 @@
 
 
+.container {
+    display:flow-root;
+}
+
 .consola {
+    display: flex;
     
     position: absolute;
     justify-content: center;
-    background-color: rgb(241, 122, 3);
-    width: 40em;
-    height: 60em;
+    background-color: rgb(154, 151, 151);
+    width: 35em;
+    height: 50em;
     border-radius: 0px 0px 100px 0px;
     box-shadow: 4px 4px 10px 6px;
-    left: 60em;
-    top: 10em;
+    margin-left: 60em;
+    margin-top: 8em;
+}
 
+@media (max-width:500px){
+    .consola{
+    margin-left: 2em;
+    margin-top: 3em;
+    }
 }
 
 
 .boton-encendido {
-    position: absolute;
+    position: relative;
     border-radius: 10px;
     background-color: black;
-    width: 4em;
-    height: 4em;
-    top: 65em;
-    left: 3.5em;
+    height: 2em;
+    top: 56em;
+    left: -14em;
 }
 
 .letra-boton-on {
@@ -31,26 +41,23 @@
 }
 
 .titulo-encendido {
-    position: absolute;
-    top: 66em;
-    left: 5em;
+    position: relative;
+    top: 56.5em;
+    left: -7.5em;
+    height: 3em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
 }
 
-.boton-encendido:active {
-    width: 3.8em;
-    height: 3.8em;
-}
+
 
 .boton-apagado {
-    position: absolute;
+    position: relative;
     border-radius: 10px;
     background-color: black;
-    width: 4em;
-    height: 4em;
-    top: 65em;
-    left: 8em;
+    height: 2em;
+    top: 56em;
+    left: -13.5em;
 }
 
 .letra-boton-off {
@@ -58,16 +65,13 @@
     font-size: 1.5em;
 }
 
-.boton-apagado:active {
-    width: 3.8em;
-    height: 3.8em;
-}
+
 
 .titulo-volumen {
     position: absolute;
     transform: rotate(-90deg);
-    top: 11.4em;
-    left: 43.5em;
+    top: 15em;
+    left: 37.3em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8em;
 }
@@ -76,20 +80,20 @@
     position: absolute;
     border-radius: 10px;
     background-color: black;
-    width: 2.5em;
-    height: 2.5em;
-    top: 8em;
-    left: 45em;
+    width: 2em;
+    height: 2em;
+    top: 12em;
+    left: 39.5em;
 }
 
 .boton-bajar-volumen {
     position: absolute;
     border-radius: 10px;
     background-color: black;
-    width: 2.5em;
-    height: 2.5em;
-    top: 12em;
-    left: 45em;
+    width: 2em;
+    height: 2em;
+    top: 16em;
+    left: 39.5em;
 }
 
 .letra-boton-volumen {
@@ -104,18 +108,18 @@
 
 .led {
     position: absolute;
-    background-color: black;
+    background-color: rgb(1, 1, 1);
     border-radius: 50%;
-    width: 1em;
-    height: 1em;
+    width: 0.8em;
+    height: 0.8em;
     top: 12em;
-    left: 7em;
+    left: 4.5em;
 }
 
 .titulo-led {
     position: absolute;
     top: 20.5em;
-    left: 9em;
+    left: 5em;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.65em;
 }
@@ -124,9 +128,9 @@
     position: absolute;
     background-color: rgb(178, 180, 177);
     width: 30em;
-    height: 20em;
-    top: 3em;
-    left: 5em;
+    height: 19em;
+    top: 3.5em;
+    left: 2.5em;
     border-radius: 15px;
     box-shadow: -2px -2px 2px 2px;
 
@@ -135,10 +139,10 @@
 .screen2 {
     position: absolute;
     background-color: rgb(0, 0, 0);
-    width: 22em;
+    width: 24em;
     height: 15em;
     top: 5.5em;
-    left: 10em;
+    left: 6.5em;
     border-radius: 15px;
 
 }
@@ -146,26 +150,25 @@
 .pantalla-juego {
     position: absolute;
     top: 5.5em;
-    left: 10em;
-
-
+    left: 6.5em;
 
 }
+
 .texto {
     position: absolute;
     top: 10em;
-    left: 8em;
+    left: 9em;
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
-   
+
 }
 
-
 .pantalla-juego img {
-    width: 22em;
+
+    width: 24em;
     height: 15em;
+
     border-radius: 15px;
     animation: fadeOut 1s ease;
 }
@@ -181,10 +184,7 @@
     position: absolute;
     top: 18em;
     left: 12em;
-
-
 }
-
 
 .logo-consola img {
 
@@ -251,11 +251,11 @@
 .fondo-boton {
     position: absolute;
     background-color: rgb(49, 49, 49);
-    width: 5em;
-    height: 14em;
+    width: 4em;
+    height: 12em;
     border-radius: 30px;
-    top: 26em;
-    left: 27em;
+    top: 27em;
+    left: 24em;
     transform: rotate(45deg);
 
 
@@ -268,7 +268,7 @@
     height: 4em;
     border-radius: 50%;
     top: 39.8em;
-    left: 31em;
+    left: 26.8em;
     box-shadow: 2px 2px 2px black;
 }
 
@@ -294,7 +294,7 @@
     height: 4em;
     border-radius: 50%;
     top: 35em;
-    left: 36em;
+    left: 31.6em;
     box-shadow: 2px 2px 2px black;
 }
 
@@ -311,44 +311,116 @@
     font-size: 2em;
     text-shadow: -1.5px -1.5px 1px black;
 }
-.boton-start{
-    position: relative;
-    top: 50em;
-    left: 18em;
+
+.boton-start {
+    position: absolute;
+    top: 49em;
+    left: 16em;
+    width: 5em;
+    height: 1.3em;
     background-color: black;
     border-radius: 12px;
 }
+
 .letra-boton-start {
     position: relative;
     top: 2em;
     font-weight: bold;
 }
-.boton-select{
-    position: relative;
-    top: 50em;
-    left: 21em;
+
+.boton-select {
+    position: absolute;
+    top: 49em;
+    left: 23em;
+    width: 5em;
+    height: 1.3em;
     background-color: black;
     border-radius: 12px;
 }
+
 .letra-boton-select {
     position: relative;
     top: 2em;
     font-weight: bold;
 }
+
 .orificios-audio img {
     position: absolute;
-    width: 25em;
-    top: 44em;
-    left: 19em;
+    width: 20em;
+    top: 37.5em;
+    left: 18em;
 }
+
 .texto2 {
     position: absolute;
+    display: none;
     color: rgb(38, 105, 14);
     top: 11em;
-    left: 24em;
+    left: 22em;
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 0.5px 3px ;
+    text-shadow: 1px 0.5px 3px;
 
+}
+.titulo-cambio-color{
+    position: absolute;
+    top: 56em;
+    left: 0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.color-uno{
+    position: relative;
+    background-color: blue;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -20em;
+}
+.color-dos{
+    position: relative;
+    background-color: rgb(255, 0, 0);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -18em;
+}
+.color-tres{
+    position: relative;
+    background-color: rgb(38, 150, 4);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -16em;
+}
+.color-cuatro{
+    position: relative;
+    background-color: rgb(253, 0, 241);
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    top: 70em;
+    left: -14em;
+}
+.boton-reset {
+    position: relative;
+    width: 1em;
+    height: 1em;
+    background-color: black;
+    border-radius: 50%;
+    top: 30em;
+    left: -8em;
+}
+
+.texto-reset {
+    position: relative;
+    top: 1.5em;
+    left: -1em;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
