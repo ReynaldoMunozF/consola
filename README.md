@@ -17,9 +17,9 @@ apagará o encenderá el sistema.
 
 ## Funcionamiento
 
-*Presionar Boton ON
-*cambio de imagenes con boton A y B
-*Subida y bajada de volumen con botones + y -
+* Presionar Boton ON
+* cambio de imagenes con boton A y B
+* Subida y bajada de volumen con botones + y -
 * reset con boton OFF
 
 ## tecnologías
