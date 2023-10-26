@@ -19,8 +19,11 @@ let btnUnoCambioColorUno = document.getElementById("color-uno");
 let btnUnoCambioColorDos = document.getElementById("color-dos");
 let btnUnoCambioColorTres = document.getElementById("color-tres");
 let btnUnoCambioColorCuatro = document.getElementById("color-cuatro");
-let adelantar = 0;
+let btnReset = document.getElementById("boton-reset");
+let contador = 0;
 let retroceder = 0;
+let encendida = 0;
+
 
 
 btnEncendido.onclick = function () {  //enciende la consola
@@ -28,6 +31,7 @@ btnEncendido.onclick = function () {  //enciende la consola
     //pantallaJuego.src = "../img/img1.png";
     pantallaJuego.style.display = "block";
     Led.style.backgroundColor = "red";
+    encendida = 1
 }
 
 btnApagado.onclick = function () { //apaga la consola
@@ -46,36 +50,47 @@ btnBajarVolumen.onclick = function () { // baja el volumen
 }
 
 btnStart.onclick = function () {  //arranca el juego
+    if( encendida ==1){
     console.log("estoy aqui")
     audio2.play();
     pantallaJuego.src = "img/img1.png";
     texto.textContent = ""
     texto2.style.display = "block"
     Led.style.backgroundColor = "red";
+    }
 
 }
 
 btnA.onclick = function () {
     sonidoBtn1.play();
     texto2.style.display = "none"
-    if (adelantar == 0) {
+    if (contador == 0) {
         pantallaJuego.src = "img/img3.png";
-        adelantar = 1;
-        retroceder = 1;
-    } else if (adelantar == 1) {
+        contador ++;
+    } else if ( contador == 1) {
         pantallaJuego.src = "img/img2.png";
-        adelantar = 2
-        retroceder = 2
-    } else {
+        contador ++
+    } else if (contador == 2) {
         pantallaJuego.src = "img/img6.png";
-        adelantar = 1;
+        contador = 0
 
     }
 
 };
 btnB.onclick = function () {
     sonidoBtn1.play();
-    pantallaJuego.src = "img/img3.png";
+    // pantallaJuego.src = "img/img3.png";
+    if (contador == 1) {
+        pantallaJuego.src = "img/img1.png";
+        contador --;
+    } else if (contador == 2) {
+        pantallaJuego.src = "img/img3.png";
+        contador --
+    } else {
+        pantallaJuego.src = "img/img2.png";
+        contador = 0
+
+    }
 
 
 }
@@ -103,7 +118,10 @@ btnUnoCambioColorCuatro.onclick = function () {
 
 
 }
-
+btnReset.onclick = function () {
+    pantallaJuego.src = "img/img1.png";
+    texto2.style.display = "block"
+}
 
 
 

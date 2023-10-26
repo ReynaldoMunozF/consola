@@ -15,6 +15,13 @@ apagará o encenderá el sistema.
 
 * Página principal (consola) 
 
+## Funcionamiento
+
+*Presionar Boton ON
+*cambio de imagenes con boton A y B
+*Subida y bajada de volumen con botones + y -
+* reset con boton OFF
+
 ## tecnologías
 
 * visual studio code
